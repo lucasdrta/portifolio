@@ -2,13 +2,190 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio | Lucas Duarte</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--Ícones do Font Awesome-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Lucas Duarte</title>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Lucas Duarte</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="#about">Sobre Mim</a>
+            <a class="nav-link" href="#projects">Projetos</a>
+            <a class="nav-link" href="#contact">Contato</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
+  <main>
+    <div id="hero" class="bg-light">
+      <div class="container ">
+        <div class="row d-flex">
+          <div class="col-md-6 col-xs-12 d-flex flex-column justify-content-center vh-100">
+            <h1 class="mt-5">
+              Olá, sou <span class="text-danger font-weight-bold" style="font-weight: 600;">Lucas Duarte</span>.
+              <br>Dev back-end, focado em NodeJs.
+            </h1>
+
+            <a href="https://github.com/lucasdrta" target="_blank" class="btn btn-primary float-none w-25">
+              <i style="font-size: 22px" class="fa fa-github"></i>&nbsp;Meu GitHub
+            </a>
+
+          </div>
+          <div class="col-md-6 d-none d-sm-flex flex-column justify-content-center align-items-center vh-100">
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_sSF6EG.json" background="transparent"
+              speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="bg-light py-5">
+      <div class="container ">
+        <div class="row d-flex">
+          <div class="col-md-6">
+            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_IrrfGz.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop autoplay></lottie-player>
+          </div>
+          <div class="col-md-6 ">
+            <h1 class="my-5">Sobre Mim</h1>
+            <p class="">Meu nome é Lucas Duarte, tenho 21 anos, moro em Osasco-SP. Dedico meu tempo especifacemnte a estudar tecnologias refente a back-end.
+            <br>
+            <br>
+            Meus estudos estão voltados a melhorar minhas habilidades em NodeJs e Golang.
+            Utilizo bastante em minhas aplicações NodeJs, MongoDB e PostgreSQL
+            Entrei com mais dedicação em desenvolvimento em meados de 2018 quando ingressei na faculdade de ciencias da computação.
+              <br>
+              <br>
+            Ultimamente estou focando em melhorar meus projetos aprendendo cada vez mais sobre arquitetura de software, clean code, clean archtecture, TDD e docker.
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="bg-light  py-5">
+      <div class="container ">
+        <div class="row d-flex">
+          <div class="col-md-12">
+            <h1 class="text-center py-5">projetos recentes</h1>
+
+            <div class="d-flex justify-content-between">
+
+              <div class="card m-2 text-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Beach-forecast-Api</h6>
+                  <p class="card-text">Api created to calculate the best beaches to surf, uses the Storm Glass api to
+                    obtain forecasts.</p>
+                  <a href="https://github.com/lucasdrta/Beach-Forecast-API#readme" target="_blank"
+                    class="btn btn-primary">
+                    <i style="font-size: 22px" class="fa fa-github"></i>&nbsp;GitHub
+                  </a>
+                </div>
+              </div>
+
+              <div class="card m-2 text-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Never-forget-Api</h6>
+                  <p class="card-text">Api to save useful tools to use later.</p>
+                  <a href="https://github.com/lucasdrta/never-forget-api#readme" target="_blank"
+                    class="btn btn-primary">
+                    <i style="font-size: 22px" class="fa fa-github"></i>&nbsp;GitHub
+                  </a>
+                </div>
+              </div>
+
+              <div class="card m-2 text-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Todo-List-Api</h6>
+                  <p class="card-text">Todo-List API created with NodeJS, Prisma and Postgres</p>
+                  <a href="https://github.com/lucasdrta/todo-list#readme" target="_blank" class="btn btn-primary">
+                    <i style="font-size: 22px" class="fa fa-github"></i>&nbsp;GitHub
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="bg-light">
+      <div class="container ">
+        <div class="row d-flex">
+          <div class="col-md-12">
+            <div class="bg-lightblue rounded d-flex flex-column align-items-center py-5 my-5 shadow-sm">
+              <h1 class="text-center" style="color: #b4b2c5; font-size: 24px;">Entre em contato...</h1>
+              <h2 class="text-center my-5">
+                lucasdrtaraujo@gmail.com
+              </h2>
+              <h2 class="text-center mb-5">
+                (11) 95361-1397
+              </h2>
+              <a class="btn btn-primary w-25" href="./assets/download/LucasDuarte-CV.pdf" download>
+                <span class="fw-bold">Baixe meu CV</span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="d-flex justify-content-center flex-column align-items-center py-5 bg-dark text-white">
+      <span id="copyright">
+        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+        &nbsp;Lucas Duarte
+      </span>
+      <div>
+        <button class="btn btn-transparent">
+          <a href="https://github.com/lucasdrta" target="__blank">
+            <i style="font-size: 22px; color: #fff;" class="fa fa-github"></i>
+          </a>
+        </button>
+
+        <button class="btn btn-transparent">
+          <a href="https://linkedin.com/in/lucasdrta" target="__blank">
+            <i style="font-size: 22px; color: #fff;" class="fa fa-linkedin ml-5"></i>
+          </a>
+        </button>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
